@@ -3,6 +3,4 @@
 require "charbot"
 
 parsonal = Charbot::Parsonal.new
-loop do
-  parsonal.talk
-end
+parsonal.talk
