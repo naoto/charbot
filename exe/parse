@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'charbot'
+require 'yaml'
+
+nodes = Charbot::Parser.parse
+
+open("data/dic", 'w+') do |f|
+  f.write nodes.to_yaml
+end

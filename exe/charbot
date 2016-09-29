@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require "charbot"
+
+parsonal = Charbot::Parsonal.new
+loop do
+  parsonal.talk
+end
