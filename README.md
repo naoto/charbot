@@ -1,10 +1,14 @@
 # Charbot
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/charbot`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Markov Chain Bot Framework
 
 ## Installation
+
+Clone git repository
+
+```shell
+$git clone https://github.com/naoto/charbot.git
+```
 
 Add this line to your application's Gemfile:
 
@@ -22,15 +26,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Parse Sentence.
+create file to `data/talk`
 
-## Development
+1.example
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+  ```
+  すもももももももものうち
+  きしゃがきしゃできしゃにきしゃ
+  ```
+2. parase
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+  ```shell
+  $bundle exec exe/parse
+  ```
 
-## Contributing
+### Make Sentence.
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/charbot.
-
+```shell
+$bundle exec exe/charbot
+```
